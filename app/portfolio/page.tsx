@@ -80,7 +80,7 @@ const LoadingScreen = () => (
         />
         
         {/* Logo Text */}
-        <span className="font-bold text-white">SD</span>
+        
     </motion.div>
     
     {/* Loading Text */}
