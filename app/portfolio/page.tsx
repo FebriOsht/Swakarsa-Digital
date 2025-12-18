@@ -80,7 +80,7 @@ const LoadingScreen = () => (
         />
         
         {/* Logo Text */}
-        <img src="/images/logo.jpeg" alt="Logo" className="w-8 h-8 rounded-lg" />
+        <span className="font-bold text-white">SD</span>
     </motion.div>
     
     {/* Loading Text */}
