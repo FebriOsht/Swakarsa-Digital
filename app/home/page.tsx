@@ -679,14 +679,11 @@ const ClientLogosSection = ({ isDark, logos }: any) => (
                         alt={logo.name}
                         loading="lazy"
                         decoding="async"
-                        className={`h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 rounded-full object-cover transition-all duration-300
-                            ${isDark 
-                                ? "opacity-80 hover:opacity-100 hover:scale-110" 
-                                : "opacity-90 hover:opacity-100 hover:scale-110" 
-                            }`}
+                        className={`h-8 sm:h-10 md:h-12 w-auto object-contain transition-all duration-300
+                            ${isDark ? "opacity-40 hover:opacity-100 brightness-0 invert" : "opacity-50 hover:opacity-100 grayscale hover:grayscale-0"}`}
                         onError={(e: any) => { 
                             e.target.onerror = null; 
-                            e.target.src="https://placehold.co/120x120/A0A0A0/FFFFFF?text=Client";
+                            e.target.src="https://placehold.co/120x60/A0A0A0/FFFFFF?text=Client";
                         }}
                       />
                     </motion.div>
